@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <books>
+        <book isbn="9780857524195">
+            <title>The Travelling Cat Chronicles</title>
+            <author>Hiro Arikawa</author>
+            <pages>247</pages>
+            <released>2017-01-01</released>
+            <price/>
+        </book>
+        <book isbn="1405948418">
+            <title>Odyssey</title>
+            <author>Stephen Fry</author>
+            <pages/>
+            <released/>
+            <price/>
+        </book>
+    </books>
+    <notebooks>
+        <notebook id="N125">
+            <type>lined</type>
+            <pages>64</pages>
+            <format>A5</format>
+            <price>2.99</price>
+        </notebook>
+    </notebooks>
+</bookstore>

@@ -8,8 +8,8 @@
         <xs:element name="price" type="decimal"/>
         <xs:element name="format" type="string"/>
     </elements>
-    <bookstore>
-        <books xmlns="https://www.w3.org/2001/XMLSchema">
+    <bookstore xmlns="https://www.w3.org/2001/XMLSchema">
+        <books>
             <fiction>
                 <book isbn="9780857524195">
                     <title>The Travelling Cat Chronicles</title>

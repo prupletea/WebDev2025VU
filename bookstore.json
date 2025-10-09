@@ -14,25 +14,25 @@
             "books": {
                 "fiction": {
                     "book": [
-                        {"title": "The Travelling Cat Chronicles", "author": "Hiro Arikawa", "pages": 247, "published": "2017-01-01"},
-                        {"title": "Odyssey", "author": "Stephen Fry", "price": 24.99}
+                        {"isbn":"9780857524195", "title": "The Travelling Cat Chronicles", "author": "Hiro Arikawa", "pages": 247, "published": "2017-01-01"},
+                        {"isbn": "1405948418","title": "Odyssey", "author": "Stephen Fry", "price": 24.99}
                     ]
                 },
                 "non-fiction": {
                     "book": [
-                        {"title": "Becoming", "author": "Michelle Obama", "pages": 448, "published": "2018-11-13"}
+                        {"isbn": "1524763136", "title": "Becoming", "author": "Michelle Obama", "pages": 448, "published": "2018-11-13"}
                     ]
                 }
             },
             "notebooks": {
                 "lined": {
                     "notebook": [
-                        {"pages": 64, "format": "A5", "price": 2.99}
+                        {"id": "NL-125", "pages": 64, "format": "A5", "price": 2.99}
                     ]
                 },
                 "dotted": {
                     "notebook": [
-                        {"pages": 128, "format": "A5", "price": 3.49}
+                        {"id": "ND-547", "pages": 128, "format": "A5", "price": 3.49}
                     ]
                 },
                 "squared": {
@@ -44,7 +44,7 @@
             },
             "postcards": {
                 "postcard": [
-                    {"design": "Vilnius 1", "price": 0.99}
+                    {"id":"V001","design": "Vilnius 1", "price": 0.99}
                 ]
             }
         }

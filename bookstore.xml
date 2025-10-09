@@ -55,7 +55,8 @@
             <blank/>
         </notebooks>
         <postcards>
-            <postcard design="Vilnius1">
+            <postcard id="V001">
+                <design>Vilnius 1</design>
                 <price>0.99</price>
             </postcard>
         </postcards>

@@ -1,0 +1,52 @@
+{
+    "root": {
+        "elements": {
+            "xs:element": [
+                {"name": "title", "type": "string"},
+                {"name": "author", "type": "string"},
+                {"name": "pages", "type": "integer"},
+                {"name": "published", "type": "date"},
+                {"name": "price", "type": "decimal"},
+                {"name": "format", "type": "string"}
+            ]
+        },
+        "bookstore": {
+            "books": {
+                "fiction": {
+                    "book": [
+                        {"title": "The Travelling Cat Chronicles", "author": "Hiro Arikawa", "pages": 247, "published": "2017-01-01"},
+                        {"title": "Odyssey", "author": "Stephen Fry", "price": 24.99}
+                    ]
+                },
+                "non-fiction": {
+                    "book": [
+                        {"title": "Becoming", "author": "Michelle Obama", "pages": 448, "published": "2018-11-13"}
+                    ]
+                }
+            },
+            "notebooks": {
+                "lined": {
+                    "notebook": [
+                        {"pages": 64, "format": "A5", "price": 2.99}
+                    ]
+                },
+                "dotted": {
+                    "notebook": [
+                        {"pages": 128, "format": "A5", "price": 3.49}
+                    ]
+                },
+                "squared": {
+                    "notebook": []
+                },
+                "blank": {
+                    "notebook": []
+                }
+            },
+            "postcards": {
+                "postcard": [
+                    {"design": "Vilnius 1", "price": 0.99}
+                ]
+            }
+        }
+    }
+}

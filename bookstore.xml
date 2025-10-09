@@ -1,27 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bookstore>
     <books>
-        <book isbn="9780857524195">
-            <title>The Travelling Cat Chronicles</title>
-            <author>Hiro Arikawa</author>
-            <pages>247</pages>
-            <released>2017-01-01</released>
-            <price/>
-        </book>
-        <book isbn="1405948418">
-            <title>Odyssey</title>
-            <author>Stephen Fry</author>
-            <pages/>
-            <released/>
-            <price/>
-        </book>
+        <fiction>
+            <book isbn="9780857524195">
+                <title>The Travelling Cat Chronicles</title>
+                <author>Hiro Arikawa</author>
+                <pages>247</pages>
+                <published>2017-01-01</published>
+                <price/>
+            </book>
+            <book isbn="1405948418">
+                <title>Odyssey</title>
+                <author>Stephen Fry</author>
+                <pages/>
+                <published/>
+                <price/>
+            </book>
+        </fiction>
+        <non-fiction>
+            <book isbn="1524763136">
+                <title>Becoming</title>
+                <author>Michelle Obama</author>
+                <pages>448</pages>
+                <published>2018-11-13</published>
+                <price/>
+            </book>
+        </non-fiction>
     </books>
     <notebooks>
-        <notebook id="N125">
-            <type>lined</type>
-            <pages>64</pages>
-            <format>A5</format>
-            <price>2.99</price>
-        </notebook>
+        <lined>
+            <notebook id="NL-125">
+                <pages>64</pages>
+                <format>A5</format>
+                <price>2.99</price>
+            </notebook>
+        </lined>
+        <dotted>
+            <notebook id="ND-547">
+                <pages>128</pages>
+                <format>A5</format>
+                <price>3.49</price>
+            </notebook>
+        </dotted>
+        <squared/>
+        <blank/>
     </notebooks>
+    <postcards>
+        <postcard design="Vilnius1">
+            <price>0.99</price>
+        </postcard>
+    </postcards>
 </bookstore>

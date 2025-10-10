@@ -1,0 +1,44 @@
+1. Pasirinkti savo XML dokumente vieną konkrečią žymę (turinčią bent vieną protėvį, ir bent vieną anūką), parašyti XPath kelią, unikaliai nueinantį prie tos žymės, ir prie to kelio prirašyti dar vieną žingsnį, naudojant šias ašis: ancestor, descendant, following-sibling, preceding-sibling, following, preceding, attribute (po vieną pavyzdį kiekvienai ašiai), mokėti paaiškinti rezultatą
+
+//fiction/ancestor::*
+//fiction/descendant::*
+//fiction/following-sibling::*
+//non-fiction/preceding-sibling::*
+//fiction/following::*
+//fiction/preceding::*
+//fiction/book/attribute::*
+
+2. Parašyti XPath kelią su predikatu, kurio viduje yra panaudotas XPath kelias (pvz.: rasti visas žymes A, kurių atributas x turi tokią pačią reikšmę kaip penktos dokumente žymės B atributas y; čia A, B, x, y pakeiskite į savo dokumento žymes/atributus), paaiškinti predikato veikimo principą
+
+//notebook[price=//postcard/price]
+
+3. Suskaičiuokite kiek XML dokumente yra žymių su tekstiniais vaikais. Išsirinkite žymes ir susumuokite jų reikšmes. Gebėti paaiškinti, ką ir kodėl grąžina išraiška sum(//*)šiam XML dokumentui: <a><b>2</b><c>3</c></a> (dėstytojas pakeis XML dokumentą)
+
+//bookstore//text()
+
+4. Operacijas <, =, + su skirtingų tipų operandais, ir paaiškinti, kaip atliekamas automatinis tipų konvertavimas (pvz. mokėti paaiškinti, kaip apskaičiuojamas išraiškos 5 < "kuku" rezultatas).
+
+//notebook[price=//postcard/price]
+//notebook[price>//postcard/price]
+//notebook[format>price]
+(//lined/notebook/price)+(//dotted/notebook/price)
+
+5. Reikia parašyti trijų žingsnių XPath išraišką (turi būti naudojamas bent vienas predikatas ir dvi skirtingos ašys). Išrašykite kiekvieno žingsnio gale gautas aibes.
+
+//fiction/descendant::book[1]/attribute::isbn
+
+gautos aibės:
+1. 9780857524195
+
+6. Parašyti išraišką, su operatoriumi = arba != lyginančią. Mokėti paaiškinti konversijas:
+    1. aibę ir skaičių,
+    2. aibę ir eilutę,
+    3. aibę ir loginę reikšmę,
+    4. dvi aibes
+bei mokėti paaiškinti visais atvejais atliekamus tipų konvertavimus
+
+7. Parašyti išraišką, su operatoriais <, > lyginančią dvi aibes ir mokėti paaiškinti atliekamus automatinius tipų konvertavimus
+
+//bookstore/books/non-fiction[book > //notebooks/lined]
+
+8. Pateikti bent porą pavyzdžių, kada xpath yra naudojamas realioje sistemoje

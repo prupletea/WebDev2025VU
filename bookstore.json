@@ -44,7 +44,7 @@
             },
             "postcards": {
                 "postcard": [
-                    {"id":"V001","design": "Vilnius 1", "price": 0.99}
+                    {"id":"V001","design": "Vilnius 1", "price": 2.99}
                 ]
             }
         }

@@ -1,15 +1,5 @@
 {
     "root": {
-        "elements": {
-            "xs:element": [
-                {"name": "title", "type": "string"},
-                {"name": "author", "type": "string"},
-                {"name": "pages", "type": "integer"},
-                {"name": "published", "type": "date"},
-                {"name": "price", "type": "decimal"},
-                {"name": "format", "type": "string"}
-            ]
-        },
         "bookstore": {
             "books": {
                 "fiction": {
@@ -20,31 +10,40 @@
                 },
                 "non-fiction": {
                     "book": [
-                        {"isbn": "1524763136", "title": "Becoming", "author": "Michelle Obama", "pages": 448, "published": "2018-11-13"}
+                        {"isbn": "1524763136", "title": "Becoming", "author": "Michelle Obama", "pages": 448, "published": "2018-11-13"},
+                        {"isbn": "0399590501", "title": "Educated", "author": "Tara Westover", "pages": 352, "published": "2018-02-20"}
                     ]
                 }
             },
             "notebooks": {
                 "lined": {
                     "notebook": [
-                        {"id": "NL-125", "pages": 64, "format": "A5", "price": 2.99}
+                        {"id": "NL-125", "pages": 64, "format": "A5", "price": 2.99},
+                        {"id": "NL-258", "pages": 128, "format": "A4", "price": 4.49}
                     ]
                 },
                 "dotted": {
                     "notebook": [
-                        {"id": "ND-547", "pages": 128, "format": "A5", "price": 3.49}
+                        {"id": "ND-547", "pages": 128, "format": "A5", "price": 3.49},
+                        {"id": "ND-332", "pages": 125, "format": "A6", "price": 2.59}
                     ]
                 },
                 "squared": {
-                    "notebook": []
+                    "notebook": [
+                        {"id": "NS-146", "pages": 12, "format": "A5", "price": 0.49},
+                        {"id": "NS-004", "pages": 32, "format": "A5", "price": 1.29}
+                    ]
                 },
                 "blank": {
-                    "notebook": []
+                    "notebook": [
+                        {"id": "NB-227", "pages": 64, "format": "A5", "price": 2.99}
+                    ]
                 }
             },
             "postcards": {
                 "postcard": [
-                    {"id":"V001","design": "Vilnius 1", "price": 2.99}
+                    {"id": "V001","design": "Vilnius 1", "price": 2.99},
+                    {"id": "P001", "design": "Panevezys 1", "price": 2.99}
                 ]
             }
         }

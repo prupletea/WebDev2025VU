@@ -1,0 +1,243 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Bookstore",
+  "type": "object",
+  "properties": {
+    "root": {
+      "type": "object",
+      "properties": {
+        "bookstore": {
+          "type": "object",
+          "properties": {
+            "books": {
+              "type": "object",
+              "properties": {
+                "fiction": {
+                  "type": "object",
+                  "properties": {
+                    "book": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "isbn": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "author": {
+                            "type": "string"
+                          },
+                          "pages": {
+                            "type": "number"
+                          },
+                          "published": {
+                            "type": "string"
+                          },
+                          "price": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "isbn",
+                          "title",
+                          "author"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "non-fiction": {
+                  "type": "object",
+                  "properties": {
+                    "book": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "isbn": {
+                            "type": "string"
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "author": {
+                            "type": "string"
+                          },
+                          "pages": {
+                            "type": "number"
+                          },
+                          "published": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "isbn",
+                          "title",
+                          "author",
+                          "pages",
+                          "published"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "notebooks": {
+              "type": "object",
+              "properties": {
+                "lined": {
+                  "type": "object",
+                  "properties": {
+                    "notebook": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "pages": {
+                            "type": "number"
+                          },
+                          "format": {
+                            "type": "string"
+                          },
+                          "price": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "pages",
+                          "format",
+                          "price"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "dotted": {
+                  "type": "object",
+                  "properties": {
+                    "notebook": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "pages": {
+                            "type": "number"
+                          },
+                          "format": {
+                            "type": "string"
+                          },
+                          "price": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "pages",
+                          "format",
+                          "price"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "squared": {
+                  "type": "object",
+                  "properties": {
+                    "notebook": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "pages": {
+                            "type": "number"
+                          },
+                          "format": {
+                            "type": "string"
+                          },
+                          "price": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "pages",
+                          "format",
+                          "price"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "blank": {
+                  "type": "object",
+                  "properties": {
+                    "notebook": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "pages": {
+                            "type": "number"
+                          },
+                          "format": {
+                            "type": "string"
+                          },
+                          "price": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "postcards": {
+              "type": "object",
+              "properties": {
+                "postcard": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "design": {
+                        "type": "string"
+                      },
+                      "price": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "design",
+                      "price"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

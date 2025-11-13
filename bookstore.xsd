@@ -1,135 +1,135 @@
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="bookstore">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="books">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="fiction">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="book" maxOccurs="unbounded" minOccurs="0">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element type="xs:string" name="title"/>
-                          <xs:element type="xs:string" name="author"/>
-                          <xs:element type="xs:int" name="pages"/>
-                          <xs:element type="xs:date" name="published"/>
-                          <xs:element type="xs:float" name="price"/>
-                        </xs:sequence>
-                        <xs:attribute type="xs:long" name="isbn"/>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="non-fiction">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="book">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element type="xs:string" name="title"/>
-                          <xs:element type="xs:string" name="author"/>
-                          <xs:element type="xs:int" name="pages"/>
-                          <xs:element type="xs:date" name="published"/>
-                          <xs:element type="xs:float" name="price"/>
-                        </xs:sequence>
-                        <xs:attribute type="xs:long" name="isbn"/>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="notebooks">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="lined">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="notebook">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element type="xs:int" name="pages"/>
-                          <xs:element type="xs:string" name="format"/>
-                          <xs:element type="xs:float" name="price"/>
-                        </xs:sequence>
-                        <xs:attribute type="xs:string" name="id"/>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="dotted">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="notebook">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element type="xs:int" name="pages"/>
-                          <xs:element type="xs:string" name="format"/>
-                          <xs:element type="xs:float" name="price"/>
-                        </xs:sequence>
-                        <xs:attribute type="xs:string" name="id"/>
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="squared">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="notebook">
-                            <xs:complexType>
-                                <xs:sequence>
-                                  <xs:element type="xs:int" name="pages"/>
-                                  <xs:element type="xs:string" name="format"/>
-                                  <xs:element type="xs:float" name="price"/>
-                                </xs:sequence>
-                                <xs:attribute type="xs:string" name="id"/>
-                            </xs:complexType>
-                        </xs:element>
-                    </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-              <xs:element name="blank">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="notebook">
-                            <xs:complexType>
-                                <xs:sequence>
-                                  <xs:element type="xs:int" name="pages"/>
-                                  <xs:element type="xs:string" name="format"/>
-                                  <xs:element type="xs:float" name="price"/>
-                                </xs:sequence>
-                                <xs:attribute type="xs:string" name="id"/>
-                            </xs:complexType>
-                        </xs:element>
-                    </xs:sequence>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="postcards">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="postcard">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element type="xs:string" name="design"/>
-                    <xs:element type="xs:float" name="price"/>
-                  </xs:sequence>
-                  <xs:attribute type="xs:string" name="id"/>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-</xs:schema>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="bookstore">
+    <complexType>
+      <sequence>
+        <element name="books">
+          <complexType>
+            <sequence>
+              <element name="fiction">
+                <complexType>
+                  <sequence>
+                    <element name="book" maxOccurs="unbounded" minOccurs="0">
+                      <complexType>
+                        <sequence>
+                          <element type="string" name="title"/>
+                          <element type="string" name="author"/>
+                          <element type="int" name="pages"/>
+                          <element type="date" name="published"/>
+                          <element type="float" name="price"/>
+                        </sequence>
+                        <attribute type="long" name="isbn"/>
+                      </complexType>
+                    </element>
+                  </sequence>
+                </complexType>
+              </element>
+              <element name="non-fiction">
+                <complexType>
+                  <sequence>
+                    <element name="book">
+                      <complexType>
+                        <sequence>
+                          <element type="string" name="title"/>
+                          <element type="string" name="author"/>
+                          <element type="int" name="pages"/>
+                          <element type="date" name="published"/>
+                          <element type="float" name="price"/>
+                        </sequence>
+                        <attribute type="long" name="isbn"/>
+                      </complexType>
+                    </element>
+                  </sequence>
+                </complexType>
+              </element>
+            </sequence>
+          </complexType>
+        </element>
+        <element name="notebooks">
+          <complexType>
+            <sequence>
+              <element name="lined">
+                <complexType>
+                  <sequence>
+                    <element name="notebook">
+                      <complexType>
+                        <sequence>
+                          <element type="int" name="pages"/>
+                          <element type="string" name="format"/>
+                          <element type="float" name="price"/>
+                        </sequence>
+                        <attribute type="string" name="id"/>
+                      </complexType>
+                    </element>
+                  </sequence>
+                </complexType>
+              </element>
+              <element name="dotted">
+                <complexType>
+                  <sequence>
+                    <element name="notebook">
+                      <complexType>
+                        <sequence>
+                          <element type="int" name="pages"/>
+                          <element type="string" name="format"/>
+                          <element type="float" name="price"/>
+                        </sequence>
+                        <attribute type="string" name="id"/>
+                      </complexType>
+                    </element>
+                  </sequence>
+                </complexType>
+              </element>
+              <element name="squared">
+                <complexType>
+                    <sequence>
+                        <element name="notebook">
+                            <complexType>
+                                <sequence>
+                                  <element type="int" name="pages"/>
+                                  <element type="string" name="format"/>
+                                  <element type="float" name="price"/>
+                                </sequence>
+                                <attribute type="string" name="id"/>
+                            </complexType>
+                        </element>
+                    </sequence>
+                </complexType>
+              </element>
+              <element name="blank">
+                <complexType>
+                    <sequence>
+                        <element name="notebook">
+                            <complexType>
+                                <sequence>
+                                  <element type="int" name="pages"/>
+                                  <element type="string" name="format"/>
+                                  <element type="float" name="price"/>
+                                </sequence>
+                                <attribute type="string" name="id"/>
+                            </complexType>
+                        </element>
+                    </sequence>
+                </complexType>
+              </element>
+            </sequence>
+          </complexType>
+        </element>
+        <element name="postcards">
+          <complexType>
+            <sequence>
+              <element name="postcard">
+                <complexType>
+                  <sequence>
+                    <element type="string" name="design"/>
+                    <element type="float" name="price"/>
+                  </sequence>
+                  <attribute type="string" name="id"/>
+                </complexType>
+              </element>
+            </sequence>
+          </complexType>
+        </element>
+      </sequence>
+    </complexType>
+  </element>
+</schema>

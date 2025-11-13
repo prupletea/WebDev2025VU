@@ -1,102 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root>
-    <elements xmlns:xs="https://www.w3.org/2001/XMLSchema">
-        <xs:element name="title" type="string"/>
-        <xs:element name="author" type="string"/>
-        <xs:element name="pages" type="integer"/>
-        <xs:element name="published" type="date"/>
-        <xs:element name="price" type="decimal"/>
-        <xs:element name="format" type="string"/>
-    </elements>
-    <bookstore xmlns="https://www.w3.org/2001/XMLSchema">
-        <books>
-            <fiction>
-                <book isbn="9780857524195">
-                    <title>The Travelling Cat Chronicles</title>
-                    <author>Hiro Arikawa</author>
-                    <pages>247</pages>
-                    <published>2017-01-01</published>
-                    <price/>
-                </book>
-                <book isbn="1405948418">
-                    <title>Odyssey</title>
-                    <author>Stephen Fry</author>
-                    <pages/>
-                    <published/>
-                    <price>24.99</price>
-                </book>
-            </fiction>
-            <non-fiction>
-                <book isbn="1524763136">
-                    <title>Becoming</title>
-                    <author>Michelle Obama</author>
-                    <pages>448</pages>
-                    <published>2018-11-13</published>
-                    <price/>
-                </book>
-                <book isbn="0399590501">
-                    <title>Educated</title>
-                    <author>Tara Westover</author>
-                    <pages>352</pages>
-                    <published>2018-02-20</published>
-                    <price/>
-                </book>
-            </non-fiction>
-        </books>
-        <notebooks>
-            <lined>
-                <notebook id="NL-125">
-                    <pages>64</pages>
-                    <format>A5</format>
-                    <price>2.99</price>
-                </notebook>
-                <notebook id="NL-258">
-                    <pages>128</pages>
-                    <format>A4</format>
-                    <price>4.49</price>
-                </notebook>
-            </lined>
-            <dotted>
-                <notebook id="ND-547">
-                    <pages>128</pages>
-                    <format>A5</format>
-                    <price>3.49</price>
-                </notebook>
-                <notebook id="ND-332">
-                    <pages>125</pages>
-                    <format>A6</format>
-                    <price>2.59</price>
-                </notebook>
-            </dotted>
-            <squared>
-                <notebook id="NS-146">
-                    <pages>12</pages>
-                    <format>A5</format>
-                    <price>0.49</price>
-                </notebook>
-                <notebook id="NS-004">
-                    <pages>32</pages>
-                    <format>A5</format>
-                    <price>1.29</price>
-                </notebook>
-            </squared>
-            <blank>
-                <notebook id="NB-227">
-                    <pages>64</pages>
-                    <format>A5</format>
-                    <price>2.99</price>
-                </notebook>
-            </blank>
-        </notebooks>
-        <postcards>
-            <postcard id="V001">
-                <design>Vilnius 1</design>
+<bookstore xmlns="https://www.w3.org/2001/XMLSchema">
+    <books>
+        <fiction>
+            <book isbn="9780857524195">
+                <title>The Travelling Cat Chronicles</title>
+                <author>Hiro Arikawa</author>
+                <pages>247</pages>
+                <published>2017-01-01</published>
+                <price/>
+            </book>
+            <book isbn="1405948418">
+                <title>Odyssey</title>
+                <author>Stephen Fry</author>
+                <pages/>
+                <published/>
+                <price>24.99</price>
+            </book>
+        </fiction>
+        <non-fiction>
+            <book isbn="1524763136">
+                <title>Becoming</title>
+                <author>Michelle Obama</author>
+                <pages>448</pages>
+                <published>2018-11-13</published>
+                <price/>
+            </book>
+            <book isbn="0399590501">
+                <title>Educated</title>
+                <author>Tara Westover</author>
+                <pages>352</pages>
+                <published>2018-02-20</published>
+                <price/>
+            </book>
+        </non-fiction>
+    </books>
+    <notebooks>
+        <lined>
+            <notebook id="NL-125">
+                <pages>64</pages>
+                <format>A5</format>
                 <price>2.99</price>
-            </postcard>
-            <postcard id="P001">
-                <design>Panevezys 1</design>
+            </notebook>
+            <notebook id="NL-258">
+                <pages>128</pages>
+                <format>A4</format>
+                <price>4.49</price>
+            </notebook>
+        </lined>
+        <dotted>
+            <notebook id="ND-547">
+                <pages>128</pages>
+                <format>A5</format>
+                <price>3.49</price>
+            </notebook>
+            <notebook id="ND-332">
+                <pages>125</pages>
+                <format>A6</format>
+                <price>2.59</price>
+            </notebook>
+        </dotted>
+        <squared>
+            <notebook id="NS-146">
+                <pages>12</pages>
+                <format>A5</format>
+                <price>0.49</price>
+            </notebook>
+            <notebook id="NS-004">
+                <pages>32</pages>
+                <format>A5</format>
+                <price>1.29</price>
+            </notebook>
+        </squared>
+        <blank>
+            <notebook id="NB-227">
+                <pages>64</pages>
+                <format>A5</format>
                 <price>2.99</price>
-            </postcard>
-        </postcards>
-    </bookstore>
-</root>
+            </notebook>
+        </blank>
+    </notebooks>
+    <postcards>
+        <postcard id="V001">
+            <design>Vilnius 1</design>
+            <price>2.99</price>
+        </postcard>
+        <postcard id="P001">
+            <design>Panevezys 1</design>
+            <price>2.99</price>
+        </postcard>
+    </postcards>
+</bookstore>

@@ -3,235 +3,223 @@
   "title": "Bookstore",
   "type": "object",
   "properties": {
-    "root": {
-      "type": "object",
-      "properties": {
-        "bookstore": {
-          "type": "object",
-          "properties": {
-            "books": {
-              "type": "object",
-              "properties": {
-                "fiction": {
-                  "type": "object",
-                  "properties": {
-                    "book": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "isbn": {
-                            "type": "string"
-                          },
-                          "title": {
-                            "type": "string"
-                          },
-                          "author": {
-                            "type": "string"
-                          },
-                          "pages": {
-                            "type": "number"
-                          },
-                          "published": {
-                            "type": "string"
-                          },
-                          "price": {
-                            "type": "number"
-                          }
+    "properties": {
+      "bookstore": {
+        "type": "object",
+        "properties": {
+          "books": {
+            "type": "object",
+            "properties": {
+              "fiction": {
+                "type": "object",
+                "properties": {
+                  "book": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "isbn": {
+                          "type": "number"
                         },
-                        "required": [
-                          "isbn",
-                          "title",
-                          "author"
-                        ]
-                      }
-                    }
-                  }
-                },
-                "non-fiction": {
-                  "type": "object",
-                  "properties": {
-                    "book": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "isbn": {
-                            "type": "string"
-                          },
-                          "title": {
-                            "type": "string"
-                          },
-                          "author": {
-                            "type": "string"
-                          },
-                          "pages": {
-                            "type": "number"
-                          },
-                          "published": {
-                            "type": "string"
-                          }
+                        "title": {
+                          "type": "string"
                         },
-                        "required": [
-                          "isbn",
-                          "title",
-                          "author",
-                          "pages",
-                          "published"
-                        ]
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "notebooks": {
-              "type": "object",
-              "properties": {
-                "lined": {
-                  "type": "object",
-                  "properties": {
-                    "notebook": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "pages": {
-                            "type": "number"
-                          },
-                          "format": {
-                            "type": "string"
-                          },
-                          "price": {
-                            "type": "number"
-                          }
+                        "author": {
+                          "type": "string"
                         },
-                        "required": [
-                          "id",
-                          "pages",
-                          "format",
-                          "price"
-                        ]
-                      }
-                    }
-                  }
-                },
-                "dotted": {
-                  "type": "object",
-                  "properties": {
-                    "notebook": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "pages": {
-                            "type": "number"
-                          },
-                          "format": {
-                            "type": "string"
-                          },
-                          "price": {
-                            "type": "number"
-                          }
+                        "pages": {
+                          "type": "number"
                         },
-                        "required": [
-                          "id",
-                          "pages",
-                          "format",
-                          "price"
-                        ]
-                      }
-                    }
-                  }
-                },
-                "squared": {
-                  "type": "object",
-                  "properties": {
-                    "notebook": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "pages": {
-                            "type": "number"
-                          },
-                          "format": {
-                            "type": "string"
-                          },
-                          "price": {
-                            "type": "number"
-                          }
+                        "published": {
+                          "type": "string"
                         },
-                        "required": [
-                          "id",
-                          "pages",
-                          "format",
-                          "price"
-                        ]
-                      }
-                    }
-                  }
-                },
-                "blank": {
-                  "type": "object",
-                  "properties": {
-                    "notebook": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "pages": {
-                            "type": "number"
-                          },
-                          "format": {
-                            "type": "string"
-                          },
-                          "price": {
-                            "type": "number"
-                          }
+                        "price": {
+                          "type": "number"
                         }
-                      }
+                      },
+                      "required": [
+                        "isbn",
+                        "title"
+                      ]
+                    }
+                  }
+                }
+              },
+              "non-fiction": {
+                "type": "object",
+                "properties": {
+                  "book": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "isbn": {
+                          "type": "number"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "author": {
+                          "type": "string"
+                        },
+                        "pages": {
+                          "type": "number"
+                        },
+                        "published": {
+                          "type": "string"
+                        },
+                        "price": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "isbn",
+                        "title"
+                      ]
                     }
                   }
                 }
               }
-            },
-            "postcards": {
-              "type": "object",
-              "properties": {
-                "postcard": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "type": "string"
+            }
+          },
+          "notebooks": {
+            "type": "object",
+            "properties": {
+              "lined": {
+                "type": "object",
+                "properties": {
+                  "notebook": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "pages": {
+                          "type": "number"
+                        },
+                        "format": {
+                          "type": "string"
+                        },
+                        "price": {
+                          "type": "number"
+                        }
                       },
-                      "design": {
-                        "type": "string"
-                      },
-                      "price": {
-                        "type": "number"
-                      }
-                    },
-                    "required": [
-                      "id",
-                      "design",
-                      "price"
-                    ]
+                      "required": [
+                        "id"
+                      ]
+                    }
                   }
+                }
+              },
+              "dotted": {
+                "type": "object",
+                "properties": {
+                  "notebook": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "pages": {
+                          "type": "number"
+                        },
+                        "format": {
+                          "type": "string"
+                        },
+                        "price": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "id"
+                      ]
+                    }
+                  }
+                }
+              },
+              "squared": {
+                "type": "object",
+                "properties": {
+                  "notebook": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "pages": {
+                          "type": "number"
+                        },
+                        "format": {
+                          "type": "string"
+                        },
+                        "price": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "id"
+                      ]
+                    }
+                  }
+                }
+              },
+              "blank": {
+                "type": "object",
+                "properties": {
+                  "notebook": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "pages": {
+                          "type": "number"
+                        },
+                        "format": {
+                          "type": "string"
+                        },
+                        "price": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "id"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "postcards": {
+            "type": "object",
+            "properties": {
+              "postcard": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "design": {
+                      "type": "string"
+                    },
+                    "price": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
                 }
               }
             }

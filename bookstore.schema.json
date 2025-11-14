@@ -4,6 +4,27 @@
   "type": "object",
   "properties": {
     "properties": {
+      "color":{
+        "enum": ["red", "orange", "yellow", "green", "blue", "purple", "pink", "brown", "gray", "black", "white"]
+      },
+      "allOf": [
+        {"type": "string", "maxLength": 100}
+      ],
+      "$defs":{
+        "bookInfo": {
+          "properties": {
+            "isbn": {"type": "number"},
+            "title": {"type": "string"},
+            "author": {"type": "string"},
+            "pages": {"type": "number", "minimum": 1, "maximum": 2000},
+            "published": {"type": "string"},
+            "price": {"type": "number", "exclusinveMaximum": 100, "exclusinveMinimum": 0.01}
+          },
+          "required": [
+            "isbn", "title"
+          ]
+        }
+      },
       "bookstore": {
         "type": "object",
         "properties": {
@@ -17,30 +38,7 @@
                     "type": "array",
                     "items": {
                       "type": "object",
-                      "properties": {
-                        "isbn": {
-                          "type": "number"
-                        },
-                        "title": {
-                          "type": "string"
-                        },
-                        "author": {
-                          "type": "string"
-                        },
-                        "pages": {
-                          "type": "number"
-                        },
-                        "published": {
-                          "type": "string"
-                        },
-                        "price": {
-                          "type": "number"
-                        }
-                      },
-                      "required": [
-                        "isbn",
-                        "title"
-                      ]
+                      "$ref": "#/$defs/bookInfo"
                     }
                   }
                 }
@@ -94,7 +92,8 @@
                       "type": "object",
                       "properties": {
                         "id": {
-                          "type": "string"
+                          "type": "string",
+                          "pattern": "^(NL-[0-9][0-9][0-9])"
                         },
                         "pages": {
                           "type": "number"
@@ -104,6 +103,9 @@
                         },
                         "price": {
                           "type": "number"
+                        },
+                        "color": {
+                          "type": "color"
                         }
                       },
                       "required": [

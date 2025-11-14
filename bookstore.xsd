@@ -29,12 +29,7 @@
 
   <xs:complexType name="Book" mixed="true">
     <xs:sequence>
-      <xs:element name="isbn" type="long" minOccurs="1" maxOccurs="1">
-        <xs:unique name="UniqueISBN">
-          <xs:selector xpath="BookInfo"/>
-          <xs:field xpath="@isbn"/>
-        </xs:unique>
-      </xs:element>
+      <xs:element name="isbn" type="long" minOccurs="1" maxOccurs="1"/>
       <xs:element name="author" type="string" minOccurs="1" maxOccurs="10"/>
       <xs:element name="title" type="string" minOccurs="1" maxOccurs="1"/>
     </xs:sequence>
@@ -44,7 +39,7 @@
     <xs:complexContent>
       <xs:extension base="xs:Book">
         <xs:sequence>
-          <xs:element name="pages" type="int" maxOccurs="1"></xs:element>
+          <xs:element name="pages" type="int" maxOccurs="1"/>
           <xs:element name="published" type="date" minOccurs="1"/>
           <xs:element name="price" type="xs:ItemPrice" maxOccurs="1"/>
         </xs:sequence>
@@ -193,5 +188,13 @@
         </element>
       </sequence>
     </complexType>
+    <xs:key name="author">
+          <xs:selector xpath="BookInfo"/>
+          <xs:field xpath="@author"/>
+        </xs:key>
+        <xs:keyref name="authorRef" refer="author">
+          <xs:selector xpath="BookInfo"/>
+          <xs:field xpath="@author"/>
+        </xs:keyref>
   </element>
 </schema>

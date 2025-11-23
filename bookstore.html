@@ -4,17 +4,33 @@
         <title>Bookstore</title>
         <style>
             @media (max-width: 768px) {}
-            body {background-color: rgb(221, 185, 221);}
+            body {background-color: rgb(221, 185, 221)}
             h1 {color: indigo; font-family: 'Courier New', Courier, monospace; text-align: center; font: bold}
             h2 {color: darkorchid; font-family: 'Courier New', Courier, monospace; text-align: center; font: bold}
-            p {color: olive; font-family:'Courier New', Courier, monospace;}
-            p1 {color: olive; font-family:'Courier New', Courier, monospace; font-weight: 900; font-size: large}
+            p {color: olive; font-family:'Courier New', Courier, monospace; text-align: center; font-size: large;}
             p2 {color: midnightblue; font-family: 'Courier New', Courier, monospace;}
+            pbold {font-weight: bolder;}
+            pb {color: darkslateblue; text-align: center; font-family: 'Courier New', Courier, monospace; font-weight: bolder; font-size: larger;}
             .product-photos {
                 display: flex;
                 justify-content: space-between;
                 justify-content: space-evenly;
-                justify-content: space-around;
+                img {border:darkslateblue; border-style: dashed; border-width: 3px;}
+            }
+            .category-buttons {
+                display: flex;
+                justify-content: space-between;
+                justify-content: space-evenly;
+                button {
+                    width: 200px; height: 50px; 
+                    border-color: darkslateblue;
+                    border-style: dashed;
+                    border-width: 3px;
+                    background-color: lightsalmon;
+                }
+                button:hover {
+                    background-color: rgb(255, 121, 68);
+                }
             }
         </style>
     </head>
@@ -23,25 +39,35 @@
         <header>
             <h1> &lt;3 Welcome to the Bookstore :3</h1>
             <br/>
-            <p1>Here you can buy books and more!</p1>
+            <p> <pbold>Here you can buy books and more!</pbold> Check out the catalogue below:</p>
         </header>
-        <article>
-            <p>Check out the catalogue below:</p>
-        </article>
         </br>
         <section>
             <h2>Offered products:</h2>
-            <div class="product-photos">
-                <img src="images/books.jpg" height="200" alt="Books">
-                <img src="images/notebook.jpg" height="200" alt="Notebooks">
-                <img src="images/postcards.jpg" height="200" alt="Postcards">
-                <style>
-                    img {border:darkslateblue; border-style: dashed}
-                </style>
-            </div>
-            <div class="category-buttons">
-
-            </div>
+            <div class="products">
+                <div class="product-photos">
+                    <div class="books">
+                        <img src="images/books.jpg" height="200" title="Books">
+                    </div>
+                    <div class="notebooks">
+                        <img src="images/notebook.jpg" height="200" title="Notebooks">
+                    </div>
+                    <div class="postcards">
+                        <img src="images/postcards.jpg" height="200" title="Postcards">
+                    </div>
+                </div>
+                <div class="category-buttons">
+                    <button class="to-books">
+                        <pb>Go to Books</pb>
+                    </button>
+                    <button class="to-notebooks">
+                        <pb>Go to Notebooks</pb>
+                    </button>
+                    <button class="to-postcards">
+                        <pb>Go to Postcards</pb>
+                    </button>
+                </div>
+            <div>
         </section>
         </br>
         <section>

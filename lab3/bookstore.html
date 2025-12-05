@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bookstore</title>
+        <link rel="stylesheet" href="bookstore.css"/>
+    </head>
+    <body>
+        <header id="header-info">
+            <h1> &lt;3 Welcome to the Bookstore :3</h1>
+            <p> <em>Here you can buy books and more!</em> Check out the catalogue below:</p>
+        </header>
+        <section id="product-info">
+            <h2>Offered products:</h2>
+            <div class="products">
+                <div class="product-photos">
+                    <div class="books">
+                        <img src="images/books.jpg" height="200" title="Books" alt="Books">
+                    </div>
+                    <div class="notebooks">
+                        <img src="images/notebook.jpg" height="200" title="Notebooks" alt="Notebooks">
+                    </div>
+                    <div class="postcards">
+                        <img src="images/postcards.jpg" height="200" title="Postcards" alt="Postcards">
+                    </div>
+                </div>
+                <div class="category-buttons">
+                    <button class="to-books" onclick="document.location='books.html'">
+                        Go to Books
+                    </button>
+                    <button class="to-notebooks" onclick="document.location='notebooks.html'">
+                        Go to Notebooks
+                    </button>
+                    <button class="to-postcards" onclick="document.location='postcards.html'">
+                        Go to Postcards
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="top-seller-info">
+            <h2>Top-selling books:</h2>
+            <ul>
+                <li>"Becoming" by Michelle Obama <nav><a href="https://en.wikipedia.org/wiki/Becoming_(book)">Read More</a></nav></li>
+                <li>"Educated" by Tara Westover <nav><a href="https://en.wikipedia.org/wiki/Educated_(memoir)">Read More</a></nav></li>
+            </ul>
+        </section>
+
+        <h2>Get in touch!</h2>
+        <section id="get-in-touch-info" class="connect">
+            <div class="newsletter">
+                <h3>Subscribe to our newsletter!</h3>
+                <form id="newsletter-form">
+                    Enter your email here*:
+                    <div class="email-field">
+                        <input required="required" type="email" class="email-box"/>
+                    </div>
+                    Choose your preference:
+                    <select class="email-type">
+                        <option>Weekly</option>
+                        <option>Monthly</option>
+                    </select>
+                    <br/>
+                    Enter your birthday: (optional)
+                    <div class="bday-field">
+                        <input type="date" max="2025-12-05"/>
+                    </div>
+                    Enter your phone number: (optional)
+                    <div class="phone-field">
+                        <input type="tel"/>
+                    </div>
+                    <div class="call-consent">
+                        <input type="radio">I agree to occasional phone calls about current offers./>
+                    </div>
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="locations">
+                <h3>Our locations:</h3>
+                <p>random street 5, city</p>
+                <p>diff street 18, town</p>
+            </div>
+            <div class="contacts">
+                <h3>Contact us here:</h3>
+                <p>Phone number 123456789</p>
+                <p>Email books@email.com</p>
+                <p>twitter @bookstore_name</p>
+            </div>
+        </section>
+    </body>
+</html>

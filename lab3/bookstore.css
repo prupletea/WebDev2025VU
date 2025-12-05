@@ -1,0 +1,80 @@
+@media (max-width: 768px) {}
+body {background-color: rgb(221, 185, 221) !important;}
+body {background-color: cyan;}
+h1 {color: indigo; font-family: 'Courier New', Courier, monospace; text-align: center; font: bold}
+h2 {color: darkorchid; font-family: 'Courier New', Courier, monospace; text-align: center; font: bold}
+h3 {color:darkcyan; font-family: 'Courier New', Courier, monospace;}
+p {color: olive; font-family:'Courier New', Courier, monospace; text-align: center; font-size: large;}
+p2 {color: midnightblue; font-family: 'Courier New', Courier, monospace;}
+p3 {color: olive; font-family:'Courier New', Courier, monospace; font-size: large;}
+li {color: olive; font-family: 'Courier New', Courier, monospace;}
+a {color:darkcyan; font-family: 'Courier New', Courier, monospace;}
+.email-field {
+    font-family: 'Courier New', Courier, monospace;
+}
+.product-photos {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    img {border:darkslateblue; border-style: dashed; border-width: 3px;}
+}
+.category-buttons {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    button {
+        width: 200px; height: 50px; 
+        border-color: darkslateblue;
+        border-style: dashed;
+        border-width: 3px;
+        background-color: lightsalmon;
+    }
+    button:hover {
+        background-color: rgb(255, 121, 68);
+    }
+}
+.connect {
+    display: flex;
+    justify-content: space-between space-evenly space-around;
+    padding: 2em;
+}
+.newsletter {
+    min-width: 300;
+    height: 150;
+    display: inline-block;
+    border: 2px darkblue dashed;
+    border-right: 0px;
+    padding: 2em;
+    button {
+        width: 100px; height: 25px;
+        background-color: lightsalmon;
+        border: darkslateblue 3px;
+    }
+    button:hover {
+        background-color: rgb(255, 121, 68);;
+    }
+}
+.locations {
+    min-width: 300;
+    height: 150;
+    display: inline-block;
+    border: 2px darkblue dashed;
+    border-right: 0px;
+    padding: 2em;
+}
+.contacts {
+    min-width: 300;
+    height: 150;
+    display: inline-block;
+    border: 2px darkblue dashed;
+    padding: 2em;
+}
+input {
+    font: inherit
+}
+button {
+    font: inherit
+}
+form {
+    font: inherit
+}

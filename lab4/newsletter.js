@@ -1,23 +1,42 @@
+function validateForm(email, age, phone) {
+    if(email = "" || !emailIsValid(email)){
+        return false;
+    }
+    if(isNaN(age) || !isOldEnough(Number(age))){
+        return false;
+    }
+    if(!(phone == "" || phone == "+370xxxxxxxx") && !phoneIsValid(phone)){
+        return false;
+    }
+    return true;
+}
+
 function emailIsValid (email) {
-    return /\S+@\S+\.\S+/.test(email)
+    return /\S+@\S+\.\S+/.test(email);
+}
+
+function phoneIsValid(phone) {
+    return /^\+370\d{8,8}/.test(phone);
 }
 
 function isOldEnough(age) {
-    // validate if input number is positive
     if(age <= 0) {
-        console.log("age must be a positive number");
         return false;
     }
-    // validate if number is an integer
     if(!Number.isInteger(age)) {
-        console.log("age must be a whole number");
         return false;
     }
-    // check age requirements
-    if(age < 13) {
-        console.log("you must be 13 or older to sign up");
+    if(age < 13 && age > 120) {
         return false;
     }
 
     return true;
+}
+
+function showEmailPref() {
+    document.querySelector('.email-pref').style.display = "block";
+}
+
+function showCallConsent() {
+    document.querySelector('.call-consent').style.display = "block"
 }

@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <div class="newsletter">
-                <h3>Subscribe to our newsletter!</h3>
-                <form id="newsletter-form">
-                    <!-- validate this -->
-                    Enter your email here*:
-                    <div class="email-field">
-                        <input required="required" type="email" class="email-box"/>
-                    </div>
-                    <!-- display when email is valid -->
-                    Choose your preference:
-                    <select class="email-type">
-                        <option>Weekly</option>
-                        <option>Monthly</option>
-                    </select>
-                    <br/>
-                    <!-- validate this -->
-                    Enter your age: (optional)
-                    <div class="age-field">
-                        <input class="age-entry" type="number"/>
-                    </div>
-                    <!-- validate this -->
-                    Enter your phone number: (optional)
-                    <div class="phone-field">
-                        <input type="tel"/>
-                    </div>
-                    <!-- display if phone is valid -->
-                    <div class="call-consent">
-                        <input type="button">I agree to occasional phone calls about current offers./>
-                    </div>
-                    <input type="submit">
-                </form>
-            </div>
+    <head>
+        <title>Newsletter Form</title>
+        <link rel="stylesheet" href="newsletter.css"/>
+        <script src="newsletter.js"></script>
+        <script src="jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    if(validateForm(email, age, phone)){
+                        $("#warning").css("display", "none");
+                        $("#success").css("display", "block");
+                    } else {
+                        $("#success").css("display", "none");
+                        $("#warning").css("display", "block");
+                    }
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="newsletter">
+            <h3>Subscribe to our newsletter!</h3>
+            <form id="newsletter-form">
+                <!-- validate this -->
+                Enter your email here*:
+                <div class="email-field">
+                    <input id="email" type="text" class="email-box" oninput="showEmailPref()" />
+                </div>
+                <!-- display when email field not empty -->
+                Choose your preference:
+                <select class="email-pref">
+                    <option>Weekly</option>
+                    <option>Monthly</option>
+                </select>
+                <br/>
+                <!-- validate this -->
+                Enter your age*:
+                <div class="age-field">
+                    <input id="age" class="age-box" type="text"/>
+                </div>
+                <!-- validate this -->
+                Enter your phone number: (optional)
+                <div class="phone-field">
+                    <input 
+                        id="phone"
+                        class="phone-box" 
+                        type="text" 
+                        value="+370xxxxxxxx"
+                        oninput="showCallConsent()"
+                    />
+                </div>
+                <!-- display when phone field not empty -->
+                <div class="call-consent">
+                    <input class="call-checkbox" type="checkbox">I agree to occasional phone calls about current offers.</input>
+                </div>
+                <div id="warning" class="warning">Make sure your input is valid!</div>
+                <button id="submit" class="submit-btn" type="button">Submit</button>
+                <div id="success" class="success">Successfully subscribed!</div>
+            </form>
+        </div>
+    </body>
 </html>

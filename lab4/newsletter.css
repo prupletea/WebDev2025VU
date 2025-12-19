@@ -1,0 +1,22 @@
+.newsletter {
+    font: 'Courier New', Courier, monospace;
+    color: darkslateblue;
+}
+
+.email-pref {
+    display: none;
+}
+
+.call-consent {
+    display: none;
+}
+
+.warning {
+    color: red;
+    display: none;
+}
+
+.success {
+    color: green;
+    display: none;
+}

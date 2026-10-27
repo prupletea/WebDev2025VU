@@ -3,6 +3,6 @@ Vilnius University
 
 Faculty of Mathematics and Informatics
 
-Year 3
+Software Engineering
 
-Semester 5
+Year 3, Semester 5
